@@ -11,5 +11,7 @@ sudo cp containerd* runc* docker* /usr/bin
 echo restarting docker...
 sudo systemctl start docker
 
-echo done
-
+echo adding current user to docker group
+sudo groupadd docker
+sudo usermod -aG docker $USER
+udo hutdown -h now
