@@ -14,4 +14,4 @@ sudo systemctl start docker
 echo adding current user to docker group
 sudo groupadd docker
 sudo usermod -aG docker $USER
-sudo shutdown -h now
+
